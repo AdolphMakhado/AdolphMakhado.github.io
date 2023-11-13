@@ -81,20 +81,23 @@ html {
   /* Work Experience
   ------------------------------------*/
   .work-experience {
-    background: #023e8a;
+    background-image: url("images/keyboard-coffee-smartphone-notebook-color-background-top-view_1286-3183.avif");
+    background-size: cover;
   }
 
   /* skills
   ------------------------------------*/
   .skills {
     background-color: #049faa;
+    
   }
-  
+
 
   /* Education
   ------------------------------------*/
   .education {
-    background: #0077b6;
+    background-image: url("images/education-day-arrangement-table-with-copy-space_23-2148721266.avif");
+    background-size: cover;
   }
   /* Contact Info
   ------------------------------------*/
@@ -216,7 +219,7 @@ input[type=text], select, textarea {
   }
   
   input[type=submit] {
-    background-color: #04AA6D;
+    background-color: #604370;
     color: white;
     padding: 12px 20px;
     border: none;
@@ -225,11 +228,11 @@ input[type=text], select, textarea {
   }
   
   input[type=submit]:hover {
-    background-color: #45a049;
+    background-color: #454ba0;
   }
   
   .holder {
     border-radius: 5px;
-    background-color: rgb(211, 35, 158);
+    background-color: rgb(46, 43, 45);
     padding: 20px;
   }
