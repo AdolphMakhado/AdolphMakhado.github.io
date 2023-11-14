@@ -81,23 +81,20 @@ html {
   /* Work Experience
   ------------------------------------*/
   .work-experience {
-    background-image: url("images/keyboard-coffee-smartphone-notebook-color-background-top-view_1286-3183.avif");
-    background-size: cover;
+    background-color: #454ba0;
   }
 
   /* skills
   ------------------------------------*/
   .skills {
     background-color: #049faa;
-    
   }
 
 
   /* Education
   ------------------------------------*/
   .education {
-    background-image: url("images/education-day-arrangement-table-with-copy-space_23-2148721266.avif");
-    background-size: cover;
+    background-color: #0074d9;
   }
   /* Contact Info
   ------------------------------------*/
