@@ -84,6 +84,14 @@ html {
     background-color: #454ba0;
   }
 
+   /* Work Experience
+  ------------------------------------*/
+  .portfolio {
+    background-image: url(images/new_portfolio_background_by_larundel_d3n15qk-fullview.jpg);
+    background-size: cover;
+  }
+
+
   /* skills
   ------------------------------------*/
   .skills {
