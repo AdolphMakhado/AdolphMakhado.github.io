@@ -154,7 +154,6 @@ html {
     display: inline-block;
   }
   
-  
   /* Responsive
   ------------------------------------*/
   @media screen and (min-width:750px){
@@ -211,9 +210,6 @@ html {
   .prev {
     margin-right: 15px;
   }
-  
- 
-  
   
   body {
       padding: 0;
