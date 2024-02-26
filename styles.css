@@ -123,8 +123,8 @@ html {
     top: 0;
     left: 0;
     width: 100%;
-    padding: 15px 180px;
-    background: black;
+    padding: 1.5px 50px;
+    background: grey;
     justify-content: space-between;
     align-items: center;
     z-index: 1000;
@@ -220,7 +220,7 @@ nav li:first-child{
   position: fixed;
   top: 0;
   right: 0;
-  height: 100vh;
+  height: 70vh;
   width: 250px;
   z-index: 999;
   display: none;
