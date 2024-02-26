@@ -4,75 +4,53 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Adolph Makhado Website</title>
     <link rel="stylesheet" href="styles.css">
+    <title>Adolph Makhado Website</title>
   </head>
 
   <body>
     <main>
 
       <!-- ***************  ABOUT / PROFILE  **************** -->
-      <header class="header">
-        <div id="header1">
-          <div class="container">
-            <nav>
-              <ul class="sidebar">
-                <li onclick=hideSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
-                <li><a href="#about" class="active">About</a></li>
-                <li><a href="#experience">Experience</a></li>
-                <li><a href="#portfolio">Portfolio</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#education">Education</a></li>
-                <li><a href="#contact">Contact</a></li>
-              </ul>
-              <ul>
-                <li class="hideOnMobile"><a href="#about">About</a></li>
-                <li class="hideOnMobile"><a href="#experience">Experience</a></li>
-                <li class="hideOnMobile"><a href="#portfolio">Portfolio</a></li>
-                <li class="hideOnMobile"><a href="#skills">Skills</a></li>
-                <li class="hideOnMobile"><a href="#education">Education</a></li>
-                <li class="hideOnMobile"><a href="#contact">Contact</a></li>
-                <li class="menu-button" onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 -960 960 960" width="26"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
-              </ul>
-            </nav>
-            <script>
-              function showSidebar(){
-                const sidebar = document.querySelector('.sidebar')
-                sidebar.style.display = 'flex';
-              }
-
-              function hideSidebar(){
-                const sidebar = document.querySelector('.sidebar')
-                sidebar.style.display = 'none';
-              }
-            </script>
-          </div>
-        </div>
-        <div class="content-wrap">
-            <img class="image-style" src="images/Adolph.jpg"/>
-            <h1>Adolph Makhado</h1>
-            <h2>Learner Web Developer</h2>
-
-            <p>I am currently doing a learnership with Umuzi for Web Development. I love programming because it challenges me to think.
-              I completed my matric in 2012, then I went to the University of the Witwatersrand to study BSc in Mathematics
-              which I studied until my final year. 
-            </p>
-
-            <ul class="contact-list">
-              <li>
-                <a href="https://github.com/AdolphMakhado" target="_blank" class="btn btn-default btn-lg "><i class="fa fa-github fa-fw"></i> <span class="network-name">GitHub</span></a>
-            </li>
-            <li>
-                <a href="https://www.linkedin.com/in/adolph-makhado-a19570143/" target="_blank" class="btn btn-default btn-lg"><i class="fa fa-linkedin fa-fw"></i> <span class="network-name">LinkedIn</span></a>
-            </li>
-            </ul>
-        </div>
-
+      <header>
+        <a href="#" class="logo"></a>
+        <nav>
+          <a href="#about">About</a>
+          <a href="#experience">Experience</a>
+          <a href="#portfolio">Portfolio</a>
+          <a href="#skills">Skills</a>
+          <a href="#education">Education</a>
+          <a href="#contact">Contact</a>
+        </nav>
       </header>
       
+      
+
+      <!-- ****************  About Me  ******************** -->
+      <section class="about-me" id="about">
+          <div class="content-wrap">
+              <img class="image-style" src="images/Adolph.jpg"/>
+              <h1>Adolph Makhado</h1>
+              <h2>Learner Web Developer</h2>
+  
+              <p>I am currently doing a learnership with Umuzi for Web Development. I love programming because it challenges me to think.
+                I completed my matric in 2012, then I went to the University of the Witwatersrand to study BSc in Mathematics
+                which I studied until my final year. 
+              </p>
+  
+              <ul class="contact-list">
+                <li>
+                  <a href="https://github.com/AdolphMakhado" target="_blank" class="btn btn-default btn-lg "><i class="fa fa-github fa-fw"></i> <span class="network-name">GitHub</span></a>
+              </li>
+              <li>
+                  <a href="https://www.linkedin.com/in/adolph-makhado-a19570143/" target="_blank" class="btn btn-default btn-lg"><i class="fa fa-linkedin fa-fw"></i> <span class="network-name">LinkedIn</span></a>
+              </li>
+              </ul>
+          </div>
+      </section>
 
       <!-- ****************  WORK EXPERIENCE  ******************** -->
-      <section class="work-experience" id="work-experience">
+      <section class="work-experience" id="experience">
         <div class="content-wrap item-details divider">
 
           <!-- Job 1 -->
