@@ -123,11 +123,18 @@ html {
     top: 0;
     left: 0;
     width: 100%;
-    padding: 20px 120px;
+    padding:12px 180px;
     background: black;
     justify-content: space-between;
     align-items: center;
     z-index: 1000;
+  }
+
+  .image-style {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
   }
 
   /* About me
