@@ -184,33 +184,65 @@ html {
     display: inline-block;
   }
 
-  .sidebar{
-    position: fixed;
-    top: 0;
-    right: 0;
-    height: 100vh;
-    width: 250px;
-    z-index: 999;
-    backdrop-filter: blur(10px);
-    background-color: grey;
-    box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
-    display: none;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: flex-start;
-  }
-
-  .sidebar li{
-    width: 100%;
-  }
-
-  .sidebar a{
-    width: 100%;
-  }
-
   .menu-button{
     display: none;
   }
+
+nav{
+  box-shadow: 3px 3px 5px rgba(0,0,0,0.1);
+}
+
+nav ul{
+  width: 100%;
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+nav li{
+  height: 50px;
+}
+
+nav a{
+  height: 100%;
+  padding: 0 30px;
+  display: flex;
+  align-items: center;
+  color: black;
+}
+
+nav li:first-child{
+  margin-right: auto;
+}
+
+.sidebar{
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100vh;
+  width: 250px;
+  z-index: 999;
+  display: none;
+  backdrop-filter: blur(10px);
+  background-color: grey;
+  box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.sidebar li{
+  width: 100%;
+}
+
+.sidebar a{
+  width: 100%;
+} 
+
+.menu-button{
+  display: none;
+}
   
   /* Responsive
   ------------------------------------*/
@@ -222,11 +254,9 @@ html {
     .menu-button{
       display: block;
     }
-  }
 
-  @media only screen and (max-width: 600px){
-    #header{
-      bac
+    .menu-button{
+      display: block;
     }
   }
 
