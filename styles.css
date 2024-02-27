@@ -61,7 +61,7 @@ html {
   }
   .divider > section {
     border-bottom: 1px dashed #343434;
-    padding: 25px 0;
+    padding: 50px 0;
   }
   .divider > section:last-of-type {
     border-bottom: none;
@@ -123,8 +123,8 @@ html {
     top: 0;
     left: 0;
     width: 100%;
-    padding: 1.5px 50px;
-    background: grey;
+    padding: -20px;
+    background: #333;
     justify-content: space-between;
     align-items: center;
     z-index: 1000;
@@ -135,12 +135,14 @@ html {
     margin-left: auto;
     margin-right: auto;
     width: 50%;
+    padding: 20px;
   }
 
   /* About me
   ------------------------------------*/
   .about-me {
     background-color: #03045e;
+      
   }
 
   /* Work Experience
@@ -188,61 +190,76 @@ html {
     display: none;
   }
 
-nav{
-  box-shadow: 3px 3px 5px rgba(0,0,0,0.1);
-}
+   /* Nav Bar
+  ------------------------------------*/
+  nav{
+    box-shadow: 3px 3px 5px rgba(0,0,0,0.1);
+  }
+  
+  nav ul{
+    width: 100%;
+    list-style: none;
+    justify-content: flex-end;
+    align-items: center;
+    display: block;
+  }
+  
+  nav li{
+    height: 50px;
+  }
+  
+  nav a{
+    height: 100%;
+    padding: 0 30px;
+    display: flex;
+    align-items: center;
+    color: black;
+  }
+  
+  nav li:first-child{
+    margin-right: auto;
+  }
+  
+  .sidebar{
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 70vh;
+    width: 250px;
+    z-index: 999;
+    display: none;
+    backdrop-filter: blur(10px);
+    background-color: grey;
+    box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+  
+  .sidebar li{
+    width: 100%;
+  }
 
-nav ul{
-  width: 100%;
-  list-style: none;
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-}
+  .sidebar a{
+    width: 100%; 
+  } 
+  
+  .menu-button{
+    display: none;
+  }
+  
+    header {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      padding: 1.5px 50px;
+      background: grey;
+      justify-content: space-between;
+      align-items: center;
+      z-index: 999;
+    }
 
-nav li{
-  height: 50px;
-}
-
-nav a{
-  height: 100%;
-  padding: 0 30px;
-  display: flex;
-  align-items: center;
-  color: black;
-}
-
-nav li:first-child{
-  margin-right: auto;
-}
-
-.sidebar{
-  position: fixed;
-  top: 0;
-  right: 0;
-  height: 70vh;
-  width: 250px;
-  z-index: 999;
-  display: none;
-  backdrop-filter: blur(10px);
-  background-color: grey;
-  box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: flex-start;
-}
-
-.sidebar li{
-  width: 100%;
-}
-
-.sidebar a{
-  width: 100%; 
-} 
-
-.menu-button{
-  display: none;
-}
   
   /* Responsive
   ------------------------------------*/
@@ -270,6 +287,7 @@ nav li:first-child{
     header, footer {
       text-align: center;
     }
+    
     .project-item img {
       float: left;
       margin-right: 20px;
@@ -351,6 +369,9 @@ nav li:first-child{
     width: 250px;
     height: 250px;
     border-radius: 50%;
+    padding-top: 20px;
+    
+
 }  
 
 input[type=text], select, textarea {
