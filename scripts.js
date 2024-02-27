@@ -1,18 +1,24 @@
-let sections = document.querySelectorAll('section')
-let navLinks = document.querySelectorAll('header nav a')
+function showSidebar() {
+  const sidebar = document.querySelector(".sidebar");
+  sidebar.style.display = "flex";
+}
 
-window.onscroll = () => {
-    sections.forEach(sec => {
-        let top = window.scrollY;
-        let offset = sec.offsetTop;
-        let height = sec.offsetHeight;
-        let id = sec.getAttribute('id');
-
-        if(top >= offset && top < offset + height){
-            navLinks.forEach(links => {
-                links.classList.remove('active');
-                document.querySelector('header nav a[href*=' + id + ']').classList.add('active')
-            });
-        };
-    });
-};
+function hideSidebar() {
+  const sidebar = document.querySelector(".sidebar");
+  sidebar.style.display = "none";
+}
+const sidebar = document.querySelector(".sidebar");
+const menuLabels = [
+  "about",
+  "experience",
+  "portfolio",
+  "skills",
+  "education",
+  "contact ",
+];
+menuLabels.forEach((element) => {
+  const listItem = document.createElement("li");
+  listItem.onclick = hideSidebar;
+  listItem.innerHTML = `<a href=#${element}>${element}</a>`;
+  sidebar.appendChild(listItem);
+});
