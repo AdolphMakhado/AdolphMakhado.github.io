@@ -9,12 +9,12 @@ function hideSidebar() {
 }
 const sidebar = document.querySelector(".sidebar");
 const menuLabels = [
-  "about",
-  "experience",
-  "portfolio",
-  "skills",
-  "education",
-  "contact ",
+  "About",
+  "Experience",
+  "Portfolio",
+  "Skills",
+  "Education",
+  "Contact me",
 ];
 menuLabels.forEach((element) => {
   const listItem = document.createElement("li");
