@@ -75,7 +75,7 @@ h3 {
 }
 
 nav {
-  display: flex;
+  display: grid;
   align-items: center;
   justify-content: space-between;
   flex-wrap: wrap;
@@ -195,7 +195,7 @@ nav {
 nav ul {
   width: 100%;
   list-style: none;
-  justify-content: flex-end;
+  justify-content: grid;
   align-items: center;
   display: block;
 }
@@ -207,7 +207,7 @@ nav li {
 nav a {
   height: 100%;
   padding: 0 30px;
-  display: flex;
+  display: grid;
   align-items: center;
   color: black;
 }
@@ -296,7 +296,7 @@ header {
     column-gap: 20px;
   }
   .contact-list {
-    display: flex;
+    display: grid;
     justify-content: center;
   }
 }
@@ -317,7 +317,7 @@ header {
 
 .btns {
   width: 100%;
-  display: flex;
+  display: grid;
   justify-content: center;
   align-items: center;
 }
