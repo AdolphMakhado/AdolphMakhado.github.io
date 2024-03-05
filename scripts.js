@@ -14,7 +14,7 @@ const menuLabels = [
   "Portfolio",
   "Skills",
   "Education",
-  "Contact me",
+  "Contact",
 ];
 menuLabels.forEach((element) => {
   const listItem = document.createElement("li");

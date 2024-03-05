@@ -1,132 +1,158 @@
 <!DOCTYPE html>
 <html lang="en">
-
   <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
     <title>Adolph Makhado Website</title>
   </head>
 
   <body>
     <main>
-
       <!-- ***************  ABOUT / PROFILE  **************** -->
       <header>
         <nav>
           <ul class="sidebar"></ul>
-          <ul>
-            <li class="hideOnMobile"><a href="#About">About</a></li>
+          <ul class="navbar">
+            <li class="hideOnMobile" class="range">
+              <a href="#About">About</a>
+            </li>
             <li class="hideOnMobile"><a href="#Experience">Experience</a></li>
             <li class="hideOnMobile"><a href="#Portfolio">Portfolio</a></li>
             <li class="hideOnMobile"><a href="#Skills">Skills</a></li>
             <li class="hideOnMobile"><a href="#Education">Education</a></li>
-            <li class="hideOnMobile"><a href="#Contact">Contact Me</a></li>
-            <li class="menu-button" onclick=showSidebar()><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 -960 960 960" width="26"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></li>
+            <li class="hideOnMobile"><a href="#Contact">Contact</a></li>
+            <li class="menu-button" onclick="showSidebar()">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                height="26"
+                viewBox="0 -960 960 960"
+                width="26"
+              >
+                <path
+                  d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"
+                />
+              </svg>
+            </li>
           </ul>
         </nav>
       </header>
-      
+
       <!-- ****************  About Me  ******************** -->
       <section class="about-me" id="About">
-          <div class="content-wrap">
-              <img class="image-style" src="images/Adolph.jpg"  alt="Adolph Makhadi image">
-              <h1>Adolph Makhado</h1>
-              <h2>Learner Web Developer</h2>
-  
-              <p>I am currently doing a learnership with Umuzi for Web Development. I love programming because it challenges me to think.
-                I completed my matric in 2012, then I went to the University of the Witwatersrand to study BSc in Mathematics
-                which I studied until my final year. 
-              </p>
-  
-              <ul class="contact-list">
-                <li>
-                  <a href="https://github.com/AdolphMakhado" target="_blank" class="btn btn-default btn-lg "><i class="fa fa-github fa-fw"></i> <span class="network-name">GitHub</span></a>
-              </li>
-              <li>
-                  <a href="https://www.linkedin.com/in/adolph-makhado-a19570143/" target="_blank" class="btn btn-default btn-lg"><i class="fa fa-linkedin fa-fw"></i> <span class="network-name">LinkedIn</span></a>
-              </li>
-              </ul>
-          </div>
+        <div class="content-wrap">
+          <img
+            class="image-style"
+            src="images/Adolph.jpg"
+            alt="Adolph Makhadi image"
+          />
+          <h1>Adolph Makhado</h1>
+          <h2>Learner Web Developer</h2>
+
+          <p>
+            I am currently doing a learnership with Umuzi for Web Development. I
+            love programming because it challenges me to think. I completed my
+            matric in 2012, then I went to the University of the Witwatersrand
+            to study BSc in Mathematics which I studied until my final year.
+          </p>
+
+          <ul class="contact-list">
+            <li>
+              <a
+                href="https://github.com/AdolphMakhado"
+                target="_blank"
+                class="btn btn-default btn-lg"
+                ><i class="fa fa-github fa-fw"></i>
+                <span class="network-name">GitHub</span></a
+              >
+            </li>
+            <li>
+              <a
+                href="https://www.linkedin.com/in/adolph-makhado-a19570143/"
+                target="_blank"
+                class="btn btn-default btn-lg"
+                ><i class="fa fa-linkedin fa-fw"></i>
+                <span class="network-name">LinkedIn</span></a
+              >
+            </li>
+          </ul>
+        </div>
       </section>
 
       <!-- ****************  WORK EXPERIENCE  ******************** -->
       <section class="work-experience" id="Experience">
         <div class="content-wrap item-details divider">
-
           <!-- Job 1 -->
           <h2>Experience</h2>
-        
-        <section>
-          <h3>Accounts Consultant</h3>
-          <p>The Farm Boutique Guest House</p>
-          <p>November 2021 - February 2022</p>
-          <p>Major duties:</p>
 
-          <ul>
-            <li>Tracking payments from clients and agencies</li>
-            <li>Recording income and expenses</li>
-            <li>Welcoming guests</li>
-            <li>Booking guests</li>
-          </ul> 
-        </section>
+          <section>
+            <h3>Accounts Consultant</h3>
+            <p>The Farm Boutique Guest House</p>
+            <p>November 2021 - February 2022</p>
+            <p>Major duties:</p>
 
-        <!-- Job 2 -->
-        <section>
-          <h3>Learnership</h3>
-          <p>Bidvest Bank</p>
-          <p>February 2020 - January 2021</p>
-          <p>Major duties</p>
+            <ul>
+              <li>Tracking payments from clients and agencies</li>
+              <li>Recording income and expenses</li>
+              <li>Welcoming guests</li>
+              <li>Booking guests</li>
+            </ul>
+          </section>
 
-          <ul>
-            <li>Call center training</li>
-            <li>Online and physical filing</li>
-            <li>Electronic filing using Onbase</li>
-            <li>Admin</li>
-            <li>Sourcing CV's</li>
-          </ul>
-        </section>
-      </div>
-     </section>
+          <!-- Job 2 -->
+          <section>
+            <h3>Learnership</h3>
+            <p>Bidvest Bank</p>
+            <p>February 2020 - January 2021</p>
+            <p>Major duties</p>
 
-     <!-- Portfolio -->
-
-     <section class="portfolio" id="Portfolio">
-      <div class="content-wrap item-details divider">
-        <h2>Portfolio</h2>
-        <div>
-          Coming soon ...
+            <ul>
+              <li>Call center training</li>
+              <li>Online and physical filing</li>
+              <li>Electronic filing using Onbase</li>
+              <li>Admin</li>
+              <li>Sourcing CV's</li>
+            </ul>
+          </section>
         </div>
-      </div>
-     </section>
+      </section>
 
-     <!-- Skills -->
+      <!-- Portfolio -->
 
-    <section class="skills" id="Skills">
-      <div class="content-wrap item-details divider">
-        <h2>Skills</h2>
-        <section>
-          <h3>Professional skills</h3>
-          <ul>
-            <li>HTML</li>
-            <li>Javascript</li>
-            <li>Python</li>
-            <li>SQL</li>
-            <li>Microsoft Office</li>
-          </ul>
-        </section>
-        <section>
-          <h3>Personal skills</h3>
-          <ul>
-            <li>Problem solving</li>
-            <li>Decision making</li>
-            <li>Team Player</li>
-            <li>Communication</li>
-            <li>Time management</li>
-          </ul>
-        </section>
-      </div>
-    </section>
+      <section class="portfolio" id="Portfolio">
+        <div class="content-wrap item-details divider">
+          <h2>Portfolio</h2>
+          <div>Coming soon ...</div>
+        </div>
+      </section>
+
+      <!-- Skills -->
+
+      <section class="skills" id="Skills">
+        <div class="content-wrap item-details divider">
+          <h2>Skills</h2>
+          <section>
+            <h3>Professional skills</h3>
+            <ul>
+              <li>HTML</li>
+              <li>Javascript</li>
+              <li>Python</li>
+              <li>SQL</li>
+              <li>Microsoft Office</li>
+            </ul>
+          </section>
+          <section>
+            <h3>Personal skills</h3>
+            <ul>
+              <li>Problem solving</li>
+              <li>Decision making</li>
+              <li>Team Player</li>
+              <li>Communication</li>
+              <li>Time management</li>
+            </ul>
+          </section>
+        </div>
+      </section>
 
       <!-- *************  EDUCATION ************ -->
       <section class="education" id="Education">
@@ -150,7 +176,7 @@
             <h3>Matric</h3>
             <p>Nwaridi secondary school</p>
             <p>I completed my matric in 2012, major subjects:</p>
-            
+
             <ul>
               <li>Mathematics</li>
               <li>Physical Sciences</li>
@@ -158,34 +184,59 @@
               <li>Agricultural Science</li>
             </ul>
           </section>
-        </div>  
+        </div>
       </section>
 
       <!-- ************  CONTACT INFO / SOCIAL MEDIA  ************ -->
       <footer id="Contact">
         <div class="content-wrap">
           <h2>Keep in Touch!</h2>
-          <br><br>
+          <br /><br />
 
           <!-- Social media and contact links -->
           <div class="holder">
-
-            <form action="https://formsubmit.co/adolphmakhado4@gmail.com" method="POST">
-              <input type="text" name="_honey" style="display: none;">
-              <input type="hidden" name="_captcha" value="false">
+            <form
+              action="https://formsubmit.co/adolphmakhado4@gmail.com"
+              method="POST"
+            >
+              <input type="text" name="_honey" style="display: none" />
+              <input type="hidden" name="_captcha" value="false" />
               <label for="fname">Full Names</label>
-              <input type="text" id="fname" name="firstname" placeholder="Full names..." required>
+              <input
+                type="text"
+                id="fname"
+                name="firstname"
+                placeholder="Full names..."
+                required
+              />
 
               <label for="email">Email</label>
-              <input type="email" id="email" name="email" placeholder="Your email..." required>
-          
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="Your email..."
+                required
+              />
+
               <label for="lname">Subject</label>
-              <input type="text" id="lname" name="lastname" placeholder="Subject..." required>
-          
+              <input
+                type="text"
+                id="lname"
+                name="lastname"
+                placeholder="Subject..."
+                required
+              />
               <label for="subject">Message</label>
-              <textarea id="subject" name="subject" placeholder=" Your message..." style="height:200px" required></textarea>
-          
-              <input type="submit" value="Submit">
+              <textarea
+                id="subject"
+                name="subject"
+                placeholder=" Your message..."
+                style="height: 200px"
+                required
+              ></textarea>
+
+              <input type="submit" value="Submit" />
             </form>
           </div>
         </div>
