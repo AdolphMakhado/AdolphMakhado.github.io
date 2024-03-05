@@ -112,8 +112,6 @@ nav a:hover {
   color: #00ff0d;
 }
 
-
-
 /* About me
   ------------------------------------*/
 .about-me {
@@ -203,8 +201,7 @@ nav li:first-child {
   top: 0;
   right: 0;
   height: 70vh;
-  width: 250px;
-  z-index: 999;
+  width: 200px;
   display: none;
   backdrop-filter: blur(10px);
   background-color: grey;
@@ -212,11 +209,12 @@ nav li:first-child {
   flex-direction: column;
   align-items: flex-start;
   justify-content: flex-start;
-  border: none;
+  margin-bottom: -5000px; /* any large number will do */
+  padding-bottom: 5000px; 
 }
 
 .sidebar li {
-  width: 100%;
+  width: 80%;
 }
 
 .sidebar a {
@@ -226,6 +224,8 @@ nav li:first-child {
 .menu-button {
   display: none;
 }
+
+
 
 header {
   position: fixed;
@@ -256,19 +256,7 @@ header {
   }
 }
 
-@media (max-width: 400px) {
-  .sidebar {
-    width: 100%;
-  }
-}
-
 @media screen and (min-width: 750px) {
- /* header,
-  footer {
-    text-align: center;
-  }
-  */
-
   .project-item img {
     float: left;
     margin-right: 20px;
@@ -345,11 +333,18 @@ ul li {
 }
 
 .image-style {
-  vertical-align: middle;
-  width: 250px;
-  height: 250px;
-  border-radius: 50%;
-  padding-top: 20px;
+  text-align: center;
+  display: block;
+  width: 240px;
+  height: 240px;
+  background: #E6E7ED;
+  -moz-border-radius: 20px;
+  -webkit-border-radius: 200px;
+  background-position:50% 50%;
+  background-repeat:no-repeat;
+  margin-top: 10px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 input[type="text"],
