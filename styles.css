@@ -321,13 +321,6 @@ body {
   padding: 15px;
 }
 
-.brand {
-  margin: 0;
-  font-size: 50px;
-  cursor: grab;
-  z-index: 10;
-}
-
 ul li {
   margin: 30px;
 }
