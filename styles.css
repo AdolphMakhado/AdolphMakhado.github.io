@@ -242,6 +242,7 @@ header {
 /* Responsive
   ------------------------------------*/
 
+
 @media (max-width: 800px) {
   .hideOnMobile {
     display: none;
@@ -380,7 +381,9 @@ input[type="submit"]:hover {
 }
 
 .holder {
-  border-radius: 5px;
+  border-radius: 50px;
   background-color: rgb(46, 43, 45);
-  padding: 20px;
+  padding: 100px 100px;
+  width: 75%;
+  margin: 0 auto;
 }
