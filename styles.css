@@ -388,6 +388,15 @@ input[type="submit"]:hover {
   border-radius: 50px;
   background-color: rgb(46, 43, 45);
   padding: 100px 100px;
-  width: 75%;
+  width: 90%;
   margin: 0 auto;
+  display: table;
+}
+
+@media screen and (max-width: 400px) {
+  .holder {
+    width: 100%;
+    margin-top: 0;
+    float: right;
+  }
 }
