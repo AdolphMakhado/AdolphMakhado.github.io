@@ -385,7 +385,7 @@ input[type="submit"]:hover {
 }
 
 .holder {
-  border-radius: 50px;
+  border-radius: 0px;
   background-color: rgb(46, 43, 45);
   padding: 100px 100px;
   width: 90%;
