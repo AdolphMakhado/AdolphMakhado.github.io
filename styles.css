@@ -7,6 +7,11 @@ html {
   box-sizing: inherit;
 }
 
+html, body{
+  width: 100%;
+  overflow-x: hidden;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -316,7 +321,6 @@ body {
 
 .main-nav {
   background-color: black;
-  color: white;
   margin: 0;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   padding: 15px;
