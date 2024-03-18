@@ -286,11 +286,10 @@ header {
 @media (max-width: 460px) {
   .close-menu-button {
     display: flex;
-  }
-
-  .close-menu-button {
     padding-top: -15px;
   }
+
+ 
 
   .navbar{
     height: 10vh;
