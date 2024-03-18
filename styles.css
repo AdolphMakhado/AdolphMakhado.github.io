@@ -50,6 +50,11 @@ h2 {
   font-weight: 400;
   margin: 0;
 }
+
+h1, p{
+  padding-top: 20px;
+}
+
 .content-wrap {
   max-width: 800px;
   width: 85%;
