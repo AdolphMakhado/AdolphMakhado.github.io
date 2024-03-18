@@ -287,6 +287,14 @@ header {
   .close-menu-button {
     display: flex;
   }
+
+  .close-menu-button {
+    padding-top: -15px;
+  }
+
+  .navbar{
+    height: 10vh;
+  }
 }
 
 @media screen and (min-width: 750px) {
