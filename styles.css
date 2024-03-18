@@ -269,6 +269,10 @@ header {
     display: inline;
   }
 
+  .close-menu-button {
+    padding-left: -80px;
+  }
+
   .menu-button {
     padding-right: 50px;
   }
