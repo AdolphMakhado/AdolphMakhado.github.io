@@ -270,19 +270,5 @@
       </footer>
     </main>
     <script src="scripts.js"></script>
-    <script>
-      const Sidebar = document.querySelector("sidebar");
-      const menu = document.querySelector("navbar");
-
-      Sidebar.addEventListener("click", () => {
-        menu.classList.toggle("hide");
-      });
-
-      document.addEventListener("click", (e) => {
-        if (!menu.contains(e, target) && e.target !== Sidebar) {
-          menu.classList.add("hide");
-        }
-      });
-    </script>
   </body>
 </html>
