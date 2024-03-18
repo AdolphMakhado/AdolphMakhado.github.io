@@ -79,9 +79,17 @@ h3 {
   padding: 10px 10%;
 }
 
+.about-me{
+  padding-top: 20px;
+}
+
+.my-image{
+  padding-bottom: 20px;
+}
+
 nav {
   display: -moz-grid-line;
-  align-items: center;
+  align-items: ceter;
   justify-content: space-between;
   flex-wrap: wrap;
 }
@@ -253,13 +261,18 @@ header {
     display: none;
   }
 
-  .menu-button {
-    display: block;
+  .about-me{
+    padding-top: 20px;
+  }
+
+  .menu-button, .close-menu-button {
+    display: inline;
   }
 
   .menu-button {
-    display: block;
+    padding-right: 50px;
   }
+
 }
 
 @media screen and (min-width: 750px) {

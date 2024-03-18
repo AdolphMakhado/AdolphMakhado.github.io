@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
     <title>Adolph Makhado Website</title>
   </head>
 
@@ -11,6 +11,11 @@
     <main>
       <!-- ***************  Navigation bar **************** -->
       <header>
+        <div class="menu-icon">
+          <div class="line1"></div>
+          <div class="line2"></div>
+          <div class="line3"></div>
+        </div>
         <nav>
           <ul class="sidebar"></ul>
           <ul class="navbar">
@@ -32,6 +37,19 @@
                 />
               </svg>
             </li>
+
+            <li class="close-menu-button" onclick="closeSidebar()">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                height="24"
+                viewBox="0 -960 960 960"
+                width="24"
+              >
+                <path
+                  d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"
+                />
+              </svg>
+            </li>
           </ul>
         </nav>
       </header>
@@ -39,11 +57,14 @@
       <!-- ****************  About Me  ******************** -->
       <section class="about-me" id="About">
         <div class="content-wrap">
-          <img
-            class="image-style"
-            src="images/Adolph.jpg"
-            alt="Adolph Makhadi image"
-          >
+          <div class="my-image">
+            <img
+              class="image-style"
+              src="images/Adolph.jpg"
+              alt="Adolph Makhadi image"
+            />
+          </div>
+
           <h1>Adolph Makhado</h1>
           <h2>Learner Web Developer</h2>
 
@@ -198,55 +219,70 @@
       <footer id="Contact">
         <div class="content-wrap">
           <h2>Keep in Touch!</h2>
-          <br></div>
+          <br />
+        </div>
 
-          <!-- Social media and contact links -->
-          <div class="holder">
-            <form
-              action="https://formsubmit.co/adolphmakhado4@gmail.com"
-              method="POST"
-            >
-              <input type="text" name="_honey" style="display: none">
-              <input type="hidden" name="_captcha" value="false">
-              <label for="fname">Full Names</label>
-              <input
-                type="text"
-                id="fname"
-                name="firstname"
-                placeholder="Full names..."
-                required
-              >
+        <!-- Social media and contact links -->
+        <div class="holder">
+          <form
+            action="https://formsubmit.co/adolphmakhado4@gmail.com"
+            method="POST"
+          >
+            <input type="text" name="_honey" style="display: none" />
+            <input type="hidden" name="_captcha" value="false" />
+            <label for="fname">Full Names</label>
+            <input
+              type="text"
+              id="fname"
+              name="firstname"
+              placeholder="Full names..."
+              required
+            />
 
-              <label for="email">Email</label>
-              <input
-                type="email"
-                id="email"
-                name="email"
-                placeholder="Your email..."
-                required
-              >
+            <label for="email">Email</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="Your email..."
+              required
+            />
 
-              <label for="lname">Subject</label>
-              <input
-                type="text"
-                id="lname"
-                name="lastname"
-                placeholder="Subject..."
-                required
-              >
-              <label for="subject">Message</label>
-              <textarea
-                id="subject"
-                name="subject"
-                placeholder=" Your message..."
-                style="height: 200px"
-                required
-              ></textarea>
-              <input type="submit" value="Submit">
-            </form>
-          </div>
+            <label for="lname">Subject</label>
+            <input
+              type="text"
+              id="lname"
+              name="lastname"
+              placeholder="Subject..."
+              required
+            />
+            <label for="subject">Message</label>
+            <textarea
+              id="subject"
+              name="subject"
+              placeholder=" Your message..."
+              style="height: 200px"
+              required
+            ></textarea>
+            <input type="submit" value="Submit" />
+          </form>
+        </div>
       </footer>
     </main>
     <script src="scripts.js"></script>
+    <script>
+      const Sidebar = document.querySelector("sidebar");
+      const menu = document.querySelector("navbar");
+
+      Sidebar.addEventListener("click", () => {
+        menu.classList.toggle("hide");
+      });
+
+      document.addEventListener("click", (e) => {
+        if (!menu.contains(e, target) && e.target !== Sidebar) {
+          menu.classList.add("hide");
+        }
+      });
+    </script>
   </body>
 </html>

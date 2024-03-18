@@ -3,6 +3,11 @@ function showSidebar() {
   sidebar.style.display = "flex";
 }
 
+function closeSidebar() {
+  const sidebar = document.querySelector(".sidebar");
+  sidebar.style.display = "none";
+}
+
 function hideSidebar() {
   const sidebar = document.querySelector(".sidebar");
   sidebar.style.display = "none";
@@ -22,3 +27,5 @@ menuLabels.forEach((element) => {
   listItem.innerHTML = `<a href=#${element}>${element}</a>`;
   sidebar.appendChild(listItem);
 });
+
+
